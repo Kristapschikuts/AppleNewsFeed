@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		FAB5915D25D6A8690001B1F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5915C25D6A8690001B1F9 /* AppDelegate.swift */; };
 		FAB5915F25D6A8690001B1F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5915E25D6A8690001B1F9 /* SceneDelegate.swift */; };
-		FAB5916125D6A8690001B1F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5916025D6A8690001B1F9 /* ViewController.swift */; };
+		FAB5916125D6A8690001B1F9 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5916025D6A8690001B1F9 /* NewsFeedViewController.swift */; };
 		FAB5916425D6A8690001B1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB5916225D6A8690001B1F9 /* Main.storyboard */; };
 		FAB5916625D6A86A0001B1F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB5916525D6A86A0001B1F9 /* Assets.xcassets */; };
 		FAB5916925D6A86A0001B1F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB5916725D6A86A0001B1F9 /* LaunchScreen.storyboard */; };
+		FAB5917925D6AC330001B1F9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5917825D6AC330001B1F9 /* DetailViewController.swift */; };
+		FAB5917C25D6AC480001B1F9 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5917B25D6AC480001B1F9 /* WebViewController.swift */; };
+		FAB5918525D6AF310001B1F9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5918425D6AF310001B1F9 /* Item.swift */; };
+		FAB5918925D6B8210001B1F9 /* Gloss in Frameworks */ = {isa = PBXBuildFile; productRef = FAB5918825D6B8210001B1F9 /* Gloss */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAB5915925D6A8690001B1F9 /* AppleNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB5915C25D6A8690001B1F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB5915E25D6A8690001B1F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAB5916025D6A8690001B1F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAB5916025D6A8690001B1F9 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		FAB5916325D6A8690001B1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB5916525D6A86A0001B1F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB5916825D6A86A0001B1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB5916A25D6A86A0001B1F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB5917825D6AC330001B1F9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FAB5917B25D6AC480001B1F9 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		FAB5918425D6AF310001B1F9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB5918925D6B8210001B1F9 /* Gloss in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,50 @@
 		FAB5915B25D6A8690001B1F9 /* AppleNewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				FAB5915C25D6A8690001B1F9 /* AppDelegate.swift */,
-				FAB5915E25D6A8690001B1F9 /* SceneDelegate.swift */,
-				FAB5916025D6A8690001B1F9 /* ViewController.swift */,
-				FAB5916225D6A8690001B1F9 /* Main.storyboard */,
+				FAB5917E25D6AF0E0001B1F9 /* Model */,
+				FAB5917125D6A8860001B1F9 /* AppDelegate */,
+				FAB5917425D6A8B50001B1F9 /* Controllers */,
+				FAB5917625D6A8CA0001B1F9 /* View */,
 				FAB5916525D6A86A0001B1F9 /* Assets.xcassets */,
-				FAB5916725D6A86A0001B1F9 /* LaunchScreen.storyboard */,
 				FAB5916A25D6A86A0001B1F9 /* Info.plist */,
 			);
 			path = AppleNewsFeed;
+			sourceTree = "<group>";
+		};
+		FAB5917125D6A8860001B1F9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5915C25D6A8690001B1F9 /* AppDelegate.swift */,
+				FAB5915E25D6A8690001B1F9 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FAB5917425D6A8B50001B1F9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5916025D6A8690001B1F9 /* NewsFeedViewController.swift */,
+				FAB5917825D6AC330001B1F9 /* DetailViewController.swift */,
+				FAB5917B25D6AC480001B1F9 /* WebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAB5917625D6A8CA0001B1F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5916225D6A8690001B1F9 /* Main.storyboard */,
+				FAB5916725D6A86A0001B1F9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAB5917E25D6AF0E0001B1F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5918425D6AF310001B1F9 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,9 @@
 			dependencies = (
 			);
 			name = AppleNewsFeed;
+			packageProductDependencies = (
+				FAB5918825D6B8210001B1F9 /* Gloss */,
+			);
 			productName = AppleNewsFeed;
 			productReference = FAB5915925D6A8690001B1F9 /* AppleNewsFeed.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +156,9 @@
 				Base,
 			);
 			mainGroup = FAB5915025D6A8690001B1F9;
+			packageReferences = (
+				FAB5918725D6B8210001B1F9 /* XCRemoteSwiftPackageReference "Gloss" */,
+			);
 			productRefGroup = FAB5915A25D6A8690001B1F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB5916125D6A8690001B1F9 /* ViewController.swift in Sources */,
+				FAB5916125D6A8690001B1F9 /* NewsFeedViewController.swift in Sources */,
 				FAB5915D25D6A8690001B1F9 /* AppDelegate.swift in Sources */,
 				FAB5915F25D6A8690001B1F9 /* SceneDelegate.swift in Sources */,
+				FAB5917C25D6AC480001B1F9 /* WebViewController.swift in Sources */,
+				FAB5918525D6AF310001B1F9 /* Item.swift in Sources */,
+				FAB5917925D6AC330001B1F9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAB5918725D6B8210001B1F9 /* XCRemoteSwiftPackageReference "Gloss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hkellaway/Gloss.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAB5918825D6B8210001B1F9 /* Gloss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB5918725D6B8210001B1F9 /* XCRemoteSwiftPackageReference "Gloss" */;
+			productName = Gloss;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAB5915125D6A8690001B1F9 /* Project object */;
 }
